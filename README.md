@@ -17,11 +17,11 @@ Mombasa-Hotel-GIS-Analysis/
 │
 ├── maps/
 │   ├── study_Area.jpg          # Mombasa County location map
-│   ├── Kernel Density.png      # Hotel density heatmap
+│   ├── Kernel_Density.png      # Hotel density heatmap
 │   ├── Hotel_cluster.jpg       # Moran's I clustering analysis
-│   ├── Hotel hotspot.jpg       # Gi* hotspot/coldspot analysis
+│   ├── Hotel_hotspot.jpg       # Gi* hotspot/coldspot analysis
 │   ├── Buffer_analysis.jpg     # 500m & 1km accessibility buffers
-│   └── Thematic map.jpg        # Final composite map
+│   └── Thematic_map.jpg        # Final composite map
 │
 └── README.md
 ```
@@ -69,7 +69,7 @@ Tourist attractions were grouped into four categories: Cultural (e.g., Fort Jesu
 
 A weighted KDE was applied using hotel type weights to produce a continuous density surface, highlighting spatial concentrations of hotel activity across the county.
 
-![Kernel Density](maps/Kernel Density.png)
+![Kernel Density](maps/Kernel_Density.png)
 *Figure 2: Hotel density heatmap showing high concentration in Nyali and Bamburi*
 
 ---
@@ -90,7 +90,7 @@ The Getis-Ord Gi* statistic was used to identify statistically significant spati
 - 🔴 **Red zones** — Luxury hotel hotspots
 - 🔵 **Blue zones** — Budget hotel coldspots
 
-![Hotspot Analysis](maps/Hotel hotspot.jpg)
+![Hotspot Analysis](maps/Hotel_hotspot.jpg)
 *Figure 4: Gi* hotspot analysis showing significant hotel clusters*
 
 ---
