@@ -16,12 +16,12 @@ This geospatial analysis examines the spatial distribution of hotels across Momb
 Mombasa-Hotel-GIS-Analysis/
 │
 ├── maps/
-│   ├── 01-study-area.jpg          # Mombasa County location map
-│   ├── 02-kernel-density.png      # Hotel density heatmap
-│   ├── 03-clustering-patterns.jpg # Moran's I clustering analysis
-│   ├── 04-hotspot-analysis.jpg    # Gi* hotspot/coldspot analysis
-│   ├── 05-buffer-analysis.jpg     # 500m & 1km accessibility buffers
-│   └── 06-thematic-map.jpg        # Final composite map
+│   ├── study_Area.jpg          # Mombasa County location map
+│   ├── Kernel Density.png      # Hotel density heatmap
+│   ├── Hotel_cluster.jpg       # Moran's I clustering analysis
+│   ├── Hotel hotspot.jpg       # Gi* hotspot/coldspot analysis
+│   ├── Buffer_analysis.jpg     # 500m & 1km accessibility buffers
+│   └── Thematic map.jpg        # Final composite map
 │
 └── README.md
 ```
@@ -46,7 +46,7 @@ Mombasa-Hotel-GIS-Analysis/
 
 Mombasa County was defined as the area of interest, with its administrative boundary sourced from the Humanatarian Data Exchange. This provided the spatial extent for all subsequent analysis.
 
-![Study Area](maps/01-study-area.jpg)
+![Study Area](maps/Study_Area.jpg)
 *Figure 1: Location of Mombasa County, Kenya*
 
 ---
@@ -69,7 +69,7 @@ Tourist attractions were grouped into four categories: Cultural (e.g., Fort Jesu
 
 A weighted KDE was applied using hotel type weights to produce a continuous density surface, highlighting spatial concentrations of hotel activity across the county.
 
-![Kernel Density](maps/02-kernel-density.png)
+![Kernel Density](maps/Kernel Density.png)
 *Figure 2: Hotel density heatmap showing high concentration in Nyali and Bamburi*
 
 ---
@@ -78,7 +78,7 @@ A weighted KDE was applied using hotel type weights to produce a continuous dens
 
 Spatial autocorrelation analysis using Moran's I was conducted to determine whether hotel distribution is clustered, dispersed, or random across Mombasa County.
 
-![Clustering Patterns](maps/03-clustering-patterns.jpg)
+![Clustering Patterns](maps/Hotel_cluster.jpg)
 *Figure 3: Moran's I scatterplot showing spatial clustering patterns*
 
 ---
@@ -90,7 +90,7 @@ The Getis-Ord Gi* statistic was used to identify statistically significant spati
 - 🔴 **Red zones** — Luxury hotel hotspots
 - 🔵 **Blue zones** — Budget hotel coldspots
 
-![Hotspot Analysis](maps/04-hotspot-analysis.jpg)
+![Hotspot Analysis](maps/Hotel hotspot.jpg)
 *Figure 4: Gi* hotspot analysis showing significant hotel clusters*
 
 ---
@@ -99,7 +99,7 @@ The Getis-Ord Gi* statistic was used to identify statistically significant spati
 
 Accessibility buffers were generated around each tourist attraction at two thresholds — 500 m (walkable) and 1 km (driveable) — to assess how many hotels fall within reach of each site.
 
-![Buffer Analysis](maps/05-buffer-analysis.jpg)
+![Buffer Analysis](maps/Buffer_analysis.jpg)
 *Figure 5: Accessibility of tourist sites within 500 m and 1 km buffers*
 
 ---
@@ -108,7 +108,7 @@ Accessibility buffers were generated around each tourist attraction at two thres
 
 All layers — hotel points, attraction points, density surface, hotspots, and buffers — were composed into a single thematic map for presentation and interpretation.
 
-![Thematic Map](maps/06-thematic-map.jpg)
+![Thematic Map](maps/Thematic_map.jpg)
 *Figure 6: Combined thematic map showing hotel–attraction spatial relationships*
 
 ---
